@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class menu{
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("\n"+"1.JAVA"+"\n"+"2.ANDROID"+"\n"+"3.DOTNET");
+		System.out.println("Enter your choice");
+		int a = scan.nextInt();
+		switch (a){
+		case 1:
+			System.out.println("java");
+			break;
+		case 2:
+			System.out.println("android");
+			break;
+		case 3:
+			System.out.println("dotnet");
+			break;
+		}
+	}}
