@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+
+
+public class test{
+	public static void main(String[] args){
+		System.out.println("Welcome to Payilagam");
+		data();
+		getdata();
+	}
+	
+	public static void data(){
+		
+		int i=1;float j=0.01f;double d=0.01;
+		byte b =-1;short s = -129;
+		
+		System.out.println("The answer is:" +i+ "\t" +j+ "\t"+d+"\t"+b+"\t"+s);
+		
+		
+	}
+	
+	public static void getdata(){
+		int i;float f;String s;
+		Scanner a = new Scanner(System.in);
+		
+		System.out.println("Enter your value:");
+		s=a.next();
+		System.out.println("The value is:"+s);
+		
+		System.out.println("Enter your value:");
+		i=a.nextInt();
+		System.out.println("The value is:"+i);
+		
+		System.out.println("Enter your value:");
+		f=a.nextFloat();
+		System.out.println("The value is:"+f);
+		
+		
+		
+	}
+	
+}
+
