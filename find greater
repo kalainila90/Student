@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class greater{
+	public static void main(String[] args){
+		System.out.println("Enter values:");
+		Scanner sc = new Scanner(System.in);
+		int i=sc.nextInt();
+		int j=sc.nextInt();
+		int k=sc.nextInt();
+		
+		if(i<j && j<k){
+			System.out.println("Greater value:"+k + "\n"+"Smaller value is:"+i);
+		}else if(j<i && i<k){
+			System.out.println("Greater value:"+k + "\n"+"Smaller value is:"+j);
+		}else if(k<i && i<j){
+			System.out.println("Greater value:"+j + "\n"+"Smaller value is:"+k);
+		}else if(i<k && k<j){
+			System.out.println("Greater value:"+j + "\n"+"Smaller value is:"+i);
+		}else if(j<k && k<i){
+			System.out.println("Greater value:"+i + "\n"+"Smaller value is:"+j);
+		}else{
+			System.out.println("Greater value:"+i + "\n"+"Smaller value is:"+k);
+		}
+	}}
