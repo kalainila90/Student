@@ -1,0 +1,27 @@
+public class parameterConstructor{
+	int res;
+	parameterConstructor(int i){
+		res=i;
+		
+	}
+	parameterConstructor(){
+		int i=10;
+		res=i+1;
+		
+	}
+
+		   public static void main(String args[]) {
+		      parameterConstructor t1 = new parameterConstructor(10);
+		      t1.display();
+		      add();
+		   }
+		   void display(){
+			   System.out.println(res);
+		   }
+		   
+		   static void add(){
+			   parameterConstructor t1 = new parameterConstructor();
+			   t1.display();
+		   }
+		   
+		}
